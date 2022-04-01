@@ -86,6 +86,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 <feature name="Geolocation">
                     <param name="ios-package" value="CDVLocation"/>
                 </feature>
+                <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+                <string>A nova versão do aplicativo Clube Supernosso utiliza o GPS do smartphone direcionando o usuário para ser atendido por uma loja mais próxima. Possibilitando entregas mais rápidas ou disponibilizando com mais praticidade as compras para retirada."</string>
+                </edit-config>
         </config-file>
         <header-file src="src/ios/CDVLocation.h" />
         <source-file src="src/ios/CDVLocation.m" />
